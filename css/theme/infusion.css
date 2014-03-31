@@ -201,3 +201,12 @@ body {
 
 .reveal small code {
   vertical-align: baseline; }
+
+
+.reveal .nodefaultimg {
+  margin: 15px 0px;
+    background: none !important;
+    border: 0px !important;
+    box-shadow: none !important;
+
+}
