@@ -253,14 +253,98 @@ function linkify( selector ) {
 				</section>
                 
                 
-
+                <!-- Ivan's Section -->
 			    <section>
 			        <div class="title">
 			            <h1>Ivan</h1>
 			        </div>
 			    </section>
-                
+                    <section>
+                        <h1>WebRTC</h1>
+                        <h3>By: Ivan Joukov</h3>
+                    </section>
+                    <section>
+                        <section>
+                            <h1>WebRTC</h1>
+                            <h2>What is it?</h2>
+                            <p>WebRTC is a free, open project that enables web browsers with Real-Time Communications (RTC) capabilities via simple JavaScript APIs. The WebRTC components have been optimized to best serve this purpose.</p>
+                            [Source: <a href="http://webrtc.org">webrtc.org</a>]
+                        </section>
+                        <section>
+                            <h2>In English?</h2>
+                            <ul>
+                                <li>
+                                    An easy way to do rich peer to peer communications right in the browser<ul><li>Data exchange</li><li>Real Time Audio</li><li>Real Time Video</li></ul>
+                                </li>
+                                <li>All just in your browsers (no plugins, apps, extensions..)</li>
+                                <li>(Almost) no server required!</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h2>How easy?</h2>
+                            <p>I made a real time 'live coding' tool using webRTC in under an hour - with audio chat</p>
+                        </section>
+                    </section>
+
+                    <section>
+                        <h2>What's the catch?</h2>
+                        <ul>
+                            <li class="fragment">
+                               Limited browser support (for now).  In particular,  no IE or mobile browser support.  Android Chrome Beta!
+                            </li>
+                            <li class="fragment">
+                               If both peers are behind a symmetrical NAT a connection is impossible.
+                            </li>
+                            <li class="fragment">
+                               You miss out on some great features a server can provide.
+                                <ul><li>Cross session chat history</li><li>Conference calling with more than 2 users</li><li>Sending messages to offline users</li></ul>
+                            </li>
+                        </ul>
+                    </section>
+
                 <section>
+                    <section>
+                    <h2>How it works</h2>
+                    <ul>
+                            <li class="fragment">
+                                Supporting browsers provide JS APIs for establishing connections (PeerConnection), transferring data between peers, and working with streams (MediaStream)
+                            </li>
+                            <li class="fragment">
+                               Get media streams using getUserMedia()
+                            </li>
+                            <li class="fragment">
+                                Use ICE, STUN or TURN servers to establish the connection and do handshakes
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <img src="http://www.html5rocks.com/en/tutorials/webrtc/basics/dataPathways.png"/>
+                        [Source: <a href="http://www.html5rocks.com/en/tutorials/webrtc/basics/">HTML5Rocks</a>]
+                    </section>
+                </section>
+
+                <section>
+                    <h2>Sounds hard?</h2>
+                    There are JS libraries springing up to abstract away the details.  One good one I've used is PeerJS.
+                    Other Key Resources:
+                    <ul>
+                        <li><a href="http://www.webrtc.org">WebRTC.org</a></li>
+                        <li><a href="http://www.html5rocks.com/en/tutorials/webrtc/basics/">HTML5Rocks</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/API/WebRTC/WebRTC_basics">Mozilla Developer Network</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>What are you waiting for?</h2>
+                   It's free, it's open source, it's cross platform, it's cool.  Go try it!
+
+                    <p>Questions?</p>
+                </section>
+                
+                <!-- End Ivan's slides-->
+
+                
+			    <section>
 			        <div class="title">
 			            <h1>Jon W</h1>
 			            <br />
@@ -277,13 +361,13 @@ function linkify( selector ) {
 			        </div>
 			    </section>
                 <!-- Bora -Slide 1  -->
-                <section data-background="img/bora/bg.png">
+                <section data-background="img/bora/bg.png" class="whiteText">
                     <h1>Web Usability on a Budget</h1>
                     <img width="220" height="215" src="img/bora/caveman.jpg" alt="Caveman">
                 </section>
                 
                 <!-- Bora -Slide 2  -->
-                <section data-background="img/bora/bg.png">
+                <section data-background="img/bora/bg.png" class="whiteText">
                     <h1>Usable UI, you say?</h1>
                     <h2 class="fragment">Not Usable:</h2> <br/>
                     <div class="fragment">
@@ -298,14 +382,14 @@ function linkify( selector ) {
                 </section>
                 
                 <!-- Bora -Slide 3  -->
-                <section data-background="img/bora/bg.png">
+                <section data-background="img/bora/bg.png" class="whiteText">
                     <section>
                         <p>Scroll down to follow Usability Principles.</p>
                         <a href="#" class="image navigate-down">
                             <img width="178" height="238" src="img/bora/down-arrow.png" alt="Down arrow">
                         </a>
                     </section>
-                    <section>
+                    <section class="whiteText">
                         <h1>Usability Principles</h1>
                         <ul>
                             <li>Focus on your users and their goals.
@@ -317,7 +401,7 @@ function linkify( selector ) {
                             </li>                            
                         </ul>
                     </section>
-                    <section>
+                    <section class="whiteText">
                         <h1>Usability Principles</h1>
                         <ul>
                             <li>Talk like your users.
@@ -328,7 +412,7 @@ function linkify( selector ) {
                             </li>                            
                         </ul>
                     </section>
-                    <section>
+                    <section class="whiteText">
                         <h1>Usability Principles</h1>
                         <ul>
                             <li>Follow conventions.
@@ -339,7 +423,7 @@ function linkify( selector ) {
                         </ul>
                         <img width="820" height="460" src="img/bora/dashboards-sample.png" alt="Dashboards Sample">
                     </section>
-                    <section>
+                    <section class="whiteText">
                         <h1>Usability Principles</h1>
                         <ul>
                             <li>Minimize the cost of failure.
@@ -351,7 +435,7 @@ function linkify( selector ) {
                         </ul>
                         <img width="450" height="434" src="img/bora/gmail-undo-send.jpg" alt="Undo Sample">
                     </section>
-                    <section>
+                    <section class="whiteText">
                         <h1>Usability Principles</h1>
                         <ul>
                             <li>Provide "affordance".
@@ -362,7 +446,7 @@ function linkify( selector ) {
                         </ul>
                         <img width="860" height="564" src="img/bora/affordance-fail.png" alt="Affordance Fail Sample">
                     </section>
-                    <section>
+                    <section class="whiteText">
                         <h1>Usability Principles</h1>
                         <ul>
                             <li>Use symbology (icons)
@@ -373,7 +457,7 @@ function linkify( selector ) {
                         </ul>
                         <img width="820" height="452" src="img/bora/icons.png" alt="Icons Sample">
                     </section>
-                    <section>
+                    <section class="whiteText">
                     <h1>Usability Principles</h1>
                         <ul>
                             <li>Some links:
@@ -557,27 +641,44 @@ function linkify( selector ) {
 			
 				<section>
 					<h1>Be responsive!</h1>
-					<br>
+				    <br />
+					
 					<ul>
-						<li>
-							<ul>
-								<li>www.abookapart.com/products/responsive-web-design: Responsive web design book</li>
-								<li>alistapart.com/article/responsive-web-design: Responsive web design paper </li>
-								<li>picture.responsiveimages.org: Picture element spec</li>
-								<li>www.w3.org/html/wg/drafts/srcset/w3c-srcset: srcset attribute spec</li>
-								<li>responsiveimages.org: Responsive images group</li>                                    
-							</ul>
-						</li>                            
-					</ul>                        
+						<li>www.abookapart.com/products/responsive-web-design: Responsive web design book</li>
+						<li>alistapart.com/article/responsive-web-design: Responsive web design paper </li>
+						<li>picture.responsiveimages.org: Picture element spec</li>
+						<li>www.w3.org/html/wg/drafts/srcset/w3c-srcset: srcset attribute spec</li>
+						<li>responsiveimages.org: Responsive images group</li>                                    
+					</ul>
+					
+					
 				</section>
                 
-                <section>
+			    <section>
 			        <div class="title">
 			            <h1>Arash</h1>
 			        </div>
 			    </section>
                 
+			    <section>
+			        <h1>AngularJS</h1>
+			        <h4>why we should use it? what is it's benefit in web dev?</h4>
+                    <ol>
+                        <li>Makes MVVM pattern available in JS.</li>
+                        <li>Makes easy UI automated unit testing possible.</li>
+                        <li>Makes web apps more responsive (similar to native apps).</li>
+                        <li>Less interaction to server-side. Can handle most UI user interactions in the browser side.</li>
+			        </ol>
+			    </section>
+			    
                 <section>
+			        <div class="title">
+			            <h1>More the come</h1>
+			        </div>
+			    </section>
+
+                
+			    <section>
 			        <div class="title">
 			            <h1>Maciek</h1>
 			        </div>
@@ -720,7 +821,7 @@ function linkify( selector ) {
 						```
 					</script>
 				</section>
-				</section>
+				
 				
 				<section>
 					<section>
@@ -743,15 +844,13 @@ function linkify( selector ) {
 					</section>
 				</section>
 				
-				<section>
-					<section>
-					    <h1>Quick Demo</h1>
-                        <br/>
-                        <p><a href="status.html">status.html</a></p>
-					</section>
-				</section>
+			
 				<!-- LESTER -->
-                
+            
+                <section data-background="http://jqueryto.com/assets/img/masthead.jpg">
+					<h1 style="color: #eeeeee;">jQueryTO</h1>
+					<h3 style="color: #eeeeee;">Thank you!</h3>
+				</section>
                 
                 
 			</div>

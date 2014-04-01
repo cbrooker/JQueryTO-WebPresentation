@@ -213,3 +213,6 @@ body {
     box-shadow: none !important;
 
 }
+
+.whiteText { color: #eee; }
+.whiteText h1, .whiteText h2, .whiteText h2, .whiteText h3, .whiteText h4, .whiteText ul, .whiteText li, .whiteText p { color: #eee; }
