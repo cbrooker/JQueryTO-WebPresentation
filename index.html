@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 
 	<head>
@@ -110,6 +110,10 @@
 					</aside>
                 </section>
                 
+                
+                
+                
+
 
 			    <!-- Chris' Section - Reveal.js -->
 			    <section>
@@ -246,75 +250,18 @@ function linkify( selector ) {
                 
                 
 
-
-			    <!-- Eden's Section -->
-                <section>
-					<h1>Eden</h1>
-                </section>
-
 			    <section>
-					<h2>The State of jQuery</h2>
-                    <ul>
-                        <li>
-                            January 2013: jQuery 1.9 and 2.0 
-                            <ul>
-                                <li>The same API, but 2.x branch drops support for IE6-8</li>
-                                <li>12% smaller, so optimal for modern/mobile web apps</li>
-                            </ul>
-                        </li>
-                        <li>
-                            January 2014: jQuery 1.11 and 2.1
-                            <ul>
-                                <li>Performance optimzation</li>
-                                <li>Available on npm and Bower (package managers)</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </section>
-
-				<section>
-					<h2>jQuery 1.13</h2>
-					<p>
-                        With Microsoft no longer supporting Windows XP,
-                        <br />jQuery 1.x drops supports for IE6 and 7
-                    </p>
-                    <div class="fragment" style="margin-top: 0.5em">
-                        <p>
-                            <strong>Don't worry, not happening until early 2015</strong>
-                            <small>
-                                You can continue to use jQuery 1.12
-                                <br />Make sure you include a specific version. No jquery-latest.js!
-                            </small>
-                        </p>
-                    </div>
-                </section>
-
-				<section>
-					<h3>jQuery UI 1.12</h3>
-                    <p>
-                        Button, Slider, Flipswitch, Textinput from Mobile merge into UI
-                        <small>All widgets from jQuery Mobile will eventually be merged into jQuery UI</small>
-                    </p>
-                    <p>High contrast mode</p>
-                </section>
+			        <h1>Ivan</h1>
+			    </section>
                 
-                <section>
-                    <h3>jQuery UI 1.13</h3>
-                    <p>
-                        Along with jQuery, jQuery UI drops support for IE6 and 7
-                    </p>
-                    <p>
-                        Supports the pointer events to unify mouse, touch, and pointer support
-                        <small>Pointer events created by Microsoft will be supported by Firefox and Chrome... but not by Safari!</small>
-                    </p>
-                    <p>
-                        Rewrite of Globalize to use Unicode CLDR
-                        <small>"The Unicode CLDR provides key building blocks for software to support the world's languages,<br />with the largest and most extensive standard repository of locale data available"</small>
-					</p>
-				</section>
+			    <section>
+			        <h1>Jon W</h1>
+			    </section>
                 
                 <!-- Bora - Web Usability on a Budget  -->
-                
+                <section>
+					<h1>Bora</h1>
+                </section>
                 <!-- Bora -Slide 1  -->
                 <section data-background="img/bora/bg.png">
                     <h1>Web Usability on a Budget</h1>
@@ -428,7 +375,348 @@ function linkify( selector ) {
                 </section>
 
                 <!-- //BORA -->
+                
+                
+                <section>
+			        <h1>Emil</h1>
+			    </section>
+			    
+			    
+                
+			    <!-- Start Ernesto -->
+                <section>
+			        <h1>Ernesto</h1>
+			    </section>
+				 <section>
+					<h4>Improving Performance with Responsive Images</h4>
+					
+					<img src="http://responsiveimages.org/img/devices.gif" alt="Responsive images">
+				 </section>
 
+				<section>
+					<h2>What is not a responsive image?</h2>
+					<br>
+					<div class="fragment">
+						<p>Serve one big image and let the browser scale it?</p>
+					</div>
+					<br>
+					<div class="fragment">
+						<ul>
+							<li>Bigger page size</li>
+							<li>More power consumption</li>
+							<li>Larger load times</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h2>What is a responsive image?</h2>
+					<br>
+					
+					<div class="fragment">
+						<p>Serve an appropriate image to each user/device</p>
+					</div>
+					<br>
+					<div class="fragment">
+						<ul>
+							<li>Screen resolution</li>
+							<li>Device viewport</li>
+							<li>Device pixel ratio</li>
+							<li>Media type</li>
+							<li>Art direction</li>
+						</ul>
+					</div>
+				</section>	
+				<section>
+					<h2>The <i>srcset</i> attribute</h2>
+					<br>					
+						<p>The <i>srcset</i> attribute is an extension to the <i>img</i> and <i>source</i> elements that provides a concice method for delivering
+						high-res assets to high-density displays only, while allowing the user to override requests based on a preference
+						or available bandwidth.</p>
+						<br>
+					<div class="fragment">
+						<pre><code data-trim contenteditable>
+<img src="fallback.jpg" alt="" srcset="photo.jpg 1x, photo-hd.jpg 2x">
+						</code></pre>		
+					</div>						
+				</section>
+
+				<section>
+					<h2>The <i>picture</i> element</h2>
+					<br>					
+						<p>The picture element is a markup pattern that allows developers to declare multiple sources for an image. 
+						By using media queries, it gives developers control as to when and if those images are presented to the user.</p>
+						<br>
+					<div class="fragment">
+						<pre><code data-trim contenteditable>
+<picture>
+	<source type="image/webp" srcset="dogs-1.webp, dogs-2.webp 2x">
+	<source media="(min-width: 40em)" srcset="big.jpg 1x, big-hd.jpg 2x">
+	<source srcset="small.jpg 1x, small-hd.jpg 2x">
+	<img src="fallback.jpg" alt="">
+</picture>
+						</code></pre>		
+					</div>						
+				</section>
+				
+				<section>
+					<h2>Implementation status</h2>
+					<ul>
+						<li><strong>Blink / Chrome</strong>
+						<ul>
+							<li>Picture: ASSIGNED (in work)</li>
+							<li>srcset: IMPLEMENTED/SHIPPED</li>
+						</ul>
+						</li>
+						<li><strong>WebKit / Safari</strong>
+						<ul>
+							<li>Picture: UNCONFIRMED (not implemented)</li>
+							<li>srcset: IMPLEMENTED</li>
+						</ul>
+						</li>
+						<li><strong>Mozilla Firefox</strong>
+						<ul>
+							<li>Picture: ASSIGNED (but not implemented)</li>
+							<li>srcset: OPEN (but not implemented)</li>
+						</ul>
+						</li>
+						<li><strong>Microsoft Internet Explorer</strong>
+						<ul>
+							<li>Picture: NO INFORMATION</li>
+							<li>srcset: NO INFORMATION</li>
+						</ul>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Alternatives</h3>
+					<br>
+					<ul>
+						<li>
+							<ul>
+								<li>github.com/scottjehl/pictureﬁll: Pictureﬁll</li>
+								<li>github.com/stowball/rwd.images.js: rwd.images.js</li>
+								<li>github.com/BBC-News/Imager.js: BBC News Imager</li>                              
+							</ul>
+						</li>                            
+					</ul>                        
+				</section>	
+			
+				<section>
+					<h1>Be responsive!</h1>
+					<br>
+					<ul>
+						<li>
+							<ul>
+								<li>www.abookapart.com/products/responsive-web-design: Responsive web design book</li>
+								<li>alistapart.com/article/responsive-web-design: Responsive web design paper </li>
+								<li>picture.responsiveimages.org: Picture element spec</li>
+								<li>www.w3.org/html/wg/drafts/srcset/w3c-srcset: srcset attribute spec</li>
+								<li>responsiveimages.org: Responsive images group</li>                                    
+							</ul>
+						</li>                            
+					</ul>                        
+				</section>
+                
+                
+
+			    <section>
+			        <h1>Arash</h1>
+			    </section>
+                <section>
+			        <h1>Maciek</h1>
+			    </section>
+                
+
+
+			    <!-- Eden's Section -->
+                <section>
+					<h1>Eden</h1>
+                </section>
+
+			    <section>
+					<h2>The State of jQuery</h2>
+                    <ul>
+                        <li>
+                            January 2013: jQuery 1.9 and 2.0 
+                            <ul>
+                                <li>The same API, but 2.x branch drops support for IE6-8</li>
+                                <li>12% smaller, so optimal for modern/mobile web apps</li>
+                            </ul>
+                        </li>
+                        <li>
+                            January 2014: jQuery 1.11 and 2.1
+                            <ul>
+                                <li>Performance optimzation</li>
+                                <li>Available on npm and Bower (package managers)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+				<section>
+					<h2>jQuery 1.13</h2>
+					<p>
+                        With Microsoft no longer supporting Windows XP,
+                        <br />jQuery 1.x drops supports for IE6 and 7
+                    </p>
+                    <div class="fragment" style="margin-top: 0.5em">
+                        <p>
+                            <strong>Don't worry, not happening until early 2015</strong>
+                            <small>
+                                You can continue to use jQuery 1.12
+                                <br />Make sure you include a specific version. No jquery-latest.js!
+                            </small>
+                        </p>
+                    </div>
+                </section>
+
+				<section>
+					<h3>jQuery UI 1.12</h3>
+                    <p>
+                        Button, Slider, Flipswitch, Textinput from Mobile merge into UI
+                        <small>All widgets from jQuery Mobile will eventually be merged into jQuery UI</small>
+                    </p>
+                    <p>High contrast mode</p>
+                </section>
+                
+                <section>
+                    <h3>jQuery UI 1.13</h3>
+                    <p>
+                        Along with jQuery, jQuery UI drops support for IE6 and 7
+                    </p>
+                    <p>
+                        Supports the pointer events to unify mouse, touch, and pointer support
+                        <small>Pointer events created by Microsoft will be supported by Firefox and Chrome... but not by Safari!</small>
+                    </p>
+                    <p>
+                        Rewrite of Globalize to use Unicode CLDR
+                        <small>"The Unicode CLDR provides key building blocks for software to support the world's languages,<br />with the largest and most extensive standard repository of locale data available"</small>
+					</p>
+				</section>
+                
+                
+                
+                
+                <!-- LESTER -->
+			    <section>
+			        <h1>Lester</h1>
+			    </section>
+
+				<section>
+					<h1>Taking Javascript Offline</h1>
+					<p>Using the HTML5 Application Cache<p>
+				</section>
+				
+				<section>
+					<h2>So what is it?</h2>
+					<p class="fragment">An interface to specify resources that the browser should cache and make available to offline users</p>
+				</section>
+				
+				<section>
+					<h2>So why use it?</h2>
+					<ul class="fragment">
+						<li>Improved user experience</li>
+						<li>Increased speed</li>
+						<li>Ability to work offline</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Pain Points</h2>
+					<img class="fragment" width="900" src="img/lester/appcachesearch1.png" />
+					<img class="fragment" width="900" src="img/lester/appcachesearch2.png" />
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Popularity</h2>
+					<img class="fragment" src="img/lester/table.png" />
+				</section>
+				
+				<section data-markdown>
+					<script type="text/template">
+						## The Manifest
+
+						```
+						<html manifest="index.appcache">
+						  ...
+						</html>
+						```
+						```
+						CACHE MANIFEST
+						# 2014-04-01
+						
+						CACHE:
+						index.html
+						scripts/main.js
+						
+						NETWORK:
+						*
+						
+						FALLBACK:
+						images/large images/offline.jpg
+						
+						```
+					</script>
+				</section>
+				</section>
+				
+				<section>
+					<section>
+						<h1>Gotcha!</h1>
+						<a href="#" class="image navigate-down">
+                            <img width="178" height="238" src="img/bora/down-arrow.png" alt="Down arrow">
+                        </a>
+					</section>
+					<section>
+						<h2>Once appcached always appcached</h2>
+					</section>
+					<section>
+						<h2>Content only updates if the content of the manifest changes</h2>
+					</section>
+					<section>
+						<h2>Double refresh</h2>
+					</section>
+					<section>
+						<h2>The manifest is brittle</h2>
+					</section>
+				</section>
+				
+				<section>
+					<section>
+					    <h1>Quick Demo</h1>
+                        <br/>
+                        <p><a href="status.html">status.html</a></p>
+					</section>
+				</section>
+				<!-- LESTER -->
+                
+                
+                
+                
+                
+                
+                
+                
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 
                 
                 
