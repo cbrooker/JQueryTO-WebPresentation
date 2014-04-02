@@ -131,7 +131,7 @@
                 
                 <section>
 			        <h4>What is Reveal.js</h4>
-                    <p>HTML, JS, CSS Frmaework for creating beatiful cross platform presentations</p><br />
+                    <p>HTML, JS, CSS Framework for creating beautiful cross platform presentations</p><br />
                     <p>with support for CSS 3D transformations</p><br />
                     <p>Degrades gracefully to support almost any browser desktop or mobile</p>
 			    </section>
@@ -271,7 +271,78 @@ function linkify( selector ) {
 			        </ul>
 			    </section>
                 
+                <!-- Eden's Section -->
+                <section>
+			        <div class="title">
+			            <h1>Eden</h1>
+			        </div>
+			    </section>
                 
+			    <section>
+					<h2>The State of jQuery</h2>
+                    <ul>
+                        <li>
+                            January 2013: jQuery 1.9 and 2.0 
+                            <ul>
+                                <li>The same API, but 2.x branch drops support for IE6-8</li>
+                                <li>12% smaller, so optimal for modern/mobile web apps</li>
+                            </ul>
+                        </li>
+                        <li>
+                            January 2014: jQuery 1.11 and 2.1
+                            <ul>
+                                <li>Performance optimzation</li>
+                                <li>Available on npm and Bower (package managers)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+				<section>
+					<h2>jQuery 1.13</h2>
+					<p>
+                        With Microsoft no longer supporting Windows XP,
+                        <br />jQuery 1.x drops supports for IE6 and 7
+                    </p>
+                    <div class="fragment" style="margin-top: 0.5em">
+                        <p>
+                            <strong>Don't worry, not happening until early 2015</strong>
+                            <small>
+                                You can continue to use jQuery 1.12
+                                <br />Make sure you include a specific version. No jquery-latest.js!
+                            </small>
+                        </p>
+                    </div>
+                </section>
+
+				<section>
+					<h3>jQuery UI 1.12</h3>
+                    <p>
+                        Button, Slider, Flipswitch, Textinput from Mobile merge into UI
+                        <small>All widgets from jQuery Mobile will eventually be merged into jQuery UI</small>
+                    </p>
+                    <p>High contrast mode</p>
+                </section>
+                
+                <section>
+                    <h3>jQuery UI 1.13</h3>
+                    <p>
+                        Along with jQuery, jQuery UI drops support for IE6 and 7
+                    </p>
+                    <p>
+                        Supports the pointer events to unify mouse, touch, and pointer support
+                        <small>Pointer events created by Microsoft will be supported by Firefox and Chrome... but not by Safari!</small>
+                    </p>
+                    <p>
+                        Rewrite of Globalize to use Unicode CLDR
+                        <small>"The Unicode CLDR provides key building blocks for software to support the world's languages,<br />with the largest and most extensive standard repository of locale data available"</small>
+					</p>
+				</section>
+                
+                
+                
+                
+
 			    <!-- Ivan's Section -->
 			    <section>
 			        <div class="title">
@@ -363,13 +434,143 @@ function linkify( selector ) {
                 <!-- End Ivan's slides-->
 
                 
-			    <section>
-			        <div class="title">
-			            <h1>Jon W</h1>
-			            <br />
-                        <h2>Not ready</h2>
-			            </div>
-			    </section>
+			    
+                <!-- JDWONG'S SLIDES -->
+                
+                <section>
+                    <div class="title">
+                        <h1>Jon Wong</h1>
+                        <br />
+                        <h2>"Today I Saw the Future", of Video</h2>
+                    </div>
+                </section>
+                                                                
+                <section>
+                    <h1>HTML5 Video Elements!</h1>
+                    <br /><br />
+                    <h2 class="fragment">Just kidding; those aren't really new.</h2>
+                    <br /><br />
+                    <ul>
+                        <li class="fragment">No stable specification</li>
+                        <li class="fragment">Requires video conversion to known types</li>
+                        <li class="fragment">Lack of support on older browsers</li>
+                    </ul>
+                </section>
+                                                                
+                <section>
+                    <section>
+                                    <h2>"But Jon... my cat videos work just fine as .FLVs!"</h2>
+                                    <br />
+                                    <div class="fragment">
+                                                    <ul>
+                                                                    <li>Requires plugins or third party software to be installed</li>
+                                                                    <li>Plugin updates :(</li>
+                                                    </ul>
+                                                    <img src="http://www.prosociallab.com/wp-content/uploads/2014/02/adobe_flash_player_mac.png">
+                                    </div>
+                    </section>
+                    <section>
+                                    <h2>"But Jon... my cat videos work just fine as .FLVs!"</h2>
+                                    <br />
+                                    <ul>
+                                                    <li>Mobile experience varies (most notably iOS)</li>
+                                                    <div>
+                                                    <div style="text-align:center">
+                                                                    <div style="position:absolute;">
+                                                                                    <img src="http://b.vimeocdn.com/ts/331/745/33174537_640.jpg" style="height:318px;width:584px;">
+                                                                    </div>
+                                                                    <div style="position:absolute;">
+                                                                                    <img src="http://www.netspeedsystems.com/sites/default/files/icons/video-player-button.png">
+                                                                    </div>
+                                                    </div>
+                                    </div>
+                                    </ul>
+                                                                                                
+                    </section>
+                    <section>
+                                    <h2>"But Jon... my cat videos work just fine as .FLVs!"</h2>
+                                    <br />
+                                    <ul>
+                                                    <li>Even YouTube has an opt-in program to use HTML5 video when possible and falls back on Flash when needed.</li>
+                                                    <ul>
+                                                                    <li><a href="http://www.youtube.com/html5">http://www.youtube.com/html5</a></li>
+                                                    </ul>
+                                    </ul>
+                    </section>
+                </section>
+
+                <section>
+                    <h1>What about JavaScript?</h1>
+                    <br /><br />
+                    <h3 class="fragment">JavaScript File Decoders</h3>
+                    <br />
+                    <ul>
+                                    <li class="fragment">e.g. JSMPEG, Broadway.js</li>
+                                    <li class="fragment">Tend to have a high client side load</li>
+                                    <li class="fragment">Usually have narrow file requirements</li>
+                                    <li class="fragment">Poor mobile performance and barely acceptable desktop performance</li>
+                    </ul>
+                </section>
+                                                                
+                <section>
+                    <h3>Okay, so why aren't we all using HTML Video elements then?</h3>
+                    <ul>
+                                    <li class="fragment">Ads ($)</li>
+                                    <li class="fragment">Security (DRM)</li>
+                                    <li class="fragment">Still lacking browser support (e.g. older versions of IE)</li>
+                                    <div class="fragment">
+                                                    <br />
+                                                    <h3>As well as many more minor issues...</h3>
+                                                    <ul>
+                                                                    <li>Analytics</li>
+                                                                    <li>Full Screen support</li>
+                                                                    <li>LiveStreaming</li>
+                                                                    <li>Captions</li>
+                                                    </ul>
+                                    </div>
+                    </ul>
+                </section>
+                                                                
+                <section>
+                    <section>
+                                    <h3>Brendan Eich's blog post "Today I Saw the Future"</h3>
+                                    <br />
+                                    <ul>
+                                                    <li class="fragment">ORBX.js is a downloadable HD codec written in JS and WebGL</li>
+                                                    <li class="fragment">Created in partnership between Mozilla, OTOY, and Autodesk</li>
+                                                    <li class="fragment">Cloud based to provide graphics intensive applications on modern browsers</li>
+                                                    <li class="fragment">Smooth Remote Desktop experience for resource intensive applications</li>
+                                                    <li class="fragment">Aim to solve DRM through watermarking</li>                                                                                          
+                                    </ul>
+                    </section>
+                    <section>
+                                    <h3>ORBX.js</h3>
+                                    <br />
+                                    <ul>
+                                                    <li>Have an awesome demo video running Left 4 Dead 2 and other Steam applications smoothly within a web browser!</li>
+                                    </ul>
+                                    <img src="http://i.ytimg.com/vi/FRtBuP2-_pA/0.jpg">
+                    </section>
+                </section>
+                                                                
+                <section>
+                    <h2>So what did you see in the future?</h2>
+                    <br />
+                    <ul>
+                                    <li class="fragment">Mobile performance is paramount</li>
+                                                    <ul class="fragment">
+                                                                    <li>Minimizing file size</li>
+                                                                    <li>Maximizing performance</li>
+                                                                    <li>Providing consistency across platforms/browsers</li>
+                                                    </ul>
+                                    <li class="fragment">Offloading processing to the cloud to provide multiple renderings (e.g. angles/perspectives)</li>
+                                    <li class="fragment">WebM</li>
+                                    <li class="fragment">WebGL</li>
+                    </ul>
+                </section>                                                          
+                                                                
+                <!-- END OF JDWONG'S SLIDES-->
+
 			 
                 
 
@@ -916,73 +1117,7 @@ $scope.friends = [
                 
 
 
-			    <!-- Eden's Section -->
-                <section>
-			        <div class="title">
-			            <h1>Eden</h1>
-			        </div>
-			    </section>
-                
-			    <section>
-					<h2>The State of jQuery</h2>
-                    <ul>
-                        <li>
-                            January 2013: jQuery 1.9 and 2.0 
-                            <ul>
-                                <li>The same API, but 2.x branch drops support for IE6-8</li>
-                                <li>12% smaller, so optimal for modern/mobile web apps</li>
-                            </ul>
-                        </li>
-                        <li>
-                            January 2014: jQuery 1.11 and 2.1
-                            <ul>
-                                <li>Performance optimzation</li>
-                                <li>Available on npm and Bower (package managers)</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </section>
-
-				<section>
-					<h2>jQuery 1.13</h2>
-					<p>
-                        With Microsoft no longer supporting Windows XP,
-                        <br />jQuery 1.x drops supports for IE6 and 7
-                    </p>
-                    <div class="fragment" style="margin-top: 0.5em">
-                        <p>
-                            <strong>Don't worry, not happening until early 2015</strong>
-                            <small>
-                                You can continue to use jQuery 1.12
-                                <br />Make sure you include a specific version. No jquery-latest.js!
-                            </small>
-                        </p>
-                    </div>
-                </section>
-
-				<section>
-					<h3>jQuery UI 1.12</h3>
-                    <p>
-                        Button, Slider, Flipswitch, Textinput from Mobile merge into UI
-                        <small>All widgets from jQuery Mobile will eventually be merged into jQuery UI</small>
-                    </p>
-                    <p>High contrast mode</p>
-                </section>
-                
-                <section>
-                    <h3>jQuery UI 1.13</h3>
-                    <p>
-                        Along with jQuery, jQuery UI drops support for IE6 and 7
-                    </p>
-                    <p>
-                        Supports the pointer events to unify mouse, touch, and pointer support
-                        <small>Pointer events created by Microsoft will be supported by Firefox and Chrome... but not by Safari!</small>
-                    </p>
-                    <p>
-                        Rewrite of Globalize to use Unicode CLDR
-                        <small>"The Unicode CLDR provides key building blocks for software to support the world's languages,<br />with the largest and most extensive standard repository of locale data available"</small>
-					</p>
-				</section>
+			    
                 
                 
                 
