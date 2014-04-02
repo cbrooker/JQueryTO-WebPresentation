@@ -241,14 +241,14 @@ function linkify( selector ) {
                 <section>
 					<h2>Slides HTML</h2>
 					<pre><code data-trim contenteditable>
-<!--<section>
-    <h2>Pause Mode</h2>
-    <img src="http://musicandeverything.files.wordpress.com/2013/09/download.jpg" />
-    <p>
+&lt;section&gt;
+    &lt;h2&gt;Pause Mode&lt;/h2&gt;
+    &lt;img src=&quot;http://musicandeverything.files.wordpress.com/2013/09/download.jpg&quot; /&gt;
+    &lt;p&gt;
     	Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
 	    during a presentation.
-    </p>
-</section>-->
+    &lt;/p&gt;
+&lt;/section&gt;
 					</code></pre>
 				</section>
                 
@@ -484,35 +484,53 @@ function linkify( selector ) {
 			    </section>
                 
                 <section>
-                    <h2>Javascript on the Move</h2>
-                    <p>
+                    <h3>Javascript on the Move</h3>
+                    <br />
+                    <p class="fragment">
                         Javascript is no longer limited to just Web development platforms.
                     </p>
-                    <p class="fragment"><small>Rdio and Node.js can be used to create robots</small></p>
-                    <p class="fragment"><small>Paired with jQuery's new Pointer API and a camera, Web apps can extend beyond the browser</small></p>
+                     <ul>
+                        <li class="fragment">Johnny-Five!</li>
+                        <li class="fragment">arduino and node.js can be used to create robots</li>
+                        <li class="fragment">Paired with jQuery's new Pointer API and a camera, Web apps can extend beyound the browser</li>
+                        <li class="fragment">https://www.youtube.com/watch?v=2rPWArKq878</li>
+                    </ul>                    
                 </section>
 
                 <section>
-                    <h2>The Second Screen</h2>
-                    <p>
-                        Most households have multiple TVs and other digital devices.
+                    <h3>The Second Screen</h3>
+                    <br />
+                    <p class="fragment">
+                        Most households have multiple TVs and other digial devices.
                     </p>
-                    <p class="fragment"><small>Javascript and Websockets is allowing for easier device connectivity</small></p>
-                    <p class="fragment"><small>remote control media center from a phone</small></p>
-                    <p class="fragment"><small>playing MMORPG using phone, tablet and computer display</small></p>
+                    <ul>
+                        <li class="fragment">Javascript and Websockets is allowing for easier device connectivity</li>
+                        <li class="fragment">remote control media center from a phone</li>
+                        <li class="fragment">playing MMORPG using phone, tablet and computer display</li>
+                    </ul>
                 </section>
 
                 <section>
-                    <h2>Javascript is changing the world</h2>
+                    <h3>Javascript is changing the world</h3>
+                    <br />
                     <p>
                         Javascript is becoming a new interoperability standard.
                     </p>
-                    <p class="fragment"><small>Nothing new</small></p>
-                    <p class="fragment"><small>However</small></p>
-                    <p class="fragment"><small>Javascript not restricted or limited to a platform (Windows, Mac, Linux)</small></p>
-                    <p class="fragment"><small>Not just a Web technology</small></p>
-                    <p class="fragment"><small>Web is starting to interact with the outside world</small></p>
+                    <ul>
+                        <li class="fragment">Nothing new</li>
+                        <li class="fragment">Javascript not restristed or limited to a platform (Windows, Mac, Linux)</li>
+                        <li class="fragment">Not just a Web technology</li>
+                        <li class="fragment">Web is starting to interact with the outside world</li>
+                    </ul>
                 </section>
+
+                <section>
+                    <h3>So what!</h3>
+                    <br />
+                    <p class="fragment">As Web developers we have more options today then yesterday.
+                    </p>
+                </section>
+
 
 
                 
@@ -654,28 +672,235 @@ function linkify( selector ) {
 					
 				</section>
                 
+                
+                
+                
+                
+                <!-- Arah -->
 			    <section>
 			        <div class="title">
 			            <h1>Arash</h1>
 			        </div>
 			    </section>
                 
-			    <section>
-			        <h1>AngularJS</h1>
-			        <h4>why we should use it? what is it's benefit in web dev?</h4>
-                    <ol>
-                        <li>Makes MVVM pattern available in JS.</li>
-                        <li>Makes easy UI automated unit testing possible.</li>
-                        <li>Makes web apps more responsive (similar to native apps).</li>
-                        <li>Less interaction to server-side. Can handle most UI user interactions in the browser side.</li>
-			        </ol>
+				<section>
+					<h2> <i>AngularJS:</i></h2>
+					<br>
+					 <p>Why we should use it? What is it's benefit in web development?</p>
+					<br>					
+						<ul>
+								<li>Makes MVVM pattern available in JS.</li>
+								<li>Makes easy UI automated unit testing possible.(By use of Dependency Injection) </li>
+								<li>Makes web apps more responsive (similar to native apps).</li>
+								<li>Less interaction to server-side. Can handle most UI user interactions in the browser side.</li>
+								                           
+					   </ul>
+
+						<br>
+							
+				</section>
+				<section>
+					<h2> <i>Features of angularJS:</i></h2>
+					<br>
+					<ul>
+								<li>Templating and Data Binding</li>
+								<li>Dependency Injection </li>
+								<li>Url Routing</li>
+								
+								                           
+					</ul>
+					
 			    </section>
-			    
-                <section>
-			        <div class="title">
-			            <h1>More the come</h1>
-			        </div>
+				<section>
+					<h2><i>Templating</i></h2>
+					<br>
+					<p>you can bind the HTML elements and tags with your model variables and the updates/refresh of UI happens bi-directionally. If model value change UI gets updated and the other way around.</p>
+					<br>					
+						<ul>
+								<li>ng-repeat used for loops constructions. </li>
+								<li>ng-app defines the scope for module defined. </li>
+								<li>ng-Controller defines what controller should be used.</li>
+								<li>ng-Click attach a click function defined in controller .</li>
+							    <li>ng-href binds to anchor tag href attribute</li>
+							    <li>Many more OOTB directives</li>	                           
+					   </ul>
+				</section>
+				<section>
+					<h2><i>Templating: HTML code</i></h2>
+					<br />
+					<div class="fragment">
+						<pre><code style="height: 100%;">
+&lt;html ng-app=&quot;myApp&quot;&gt;
+    &lt;head&gt;
+        &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.4/angular.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;controller.js&quot;&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;div ng-controller=&quot;GreetingController&quot;&gt;
+        &lt;ul&gt;
+            &lt;li ng-repeat=&quot;friend in friends&quot;&gt;
+                name: {{ friend.name }}
+                nickname: {{friend.nickname}}
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div  ng-click=&quot;add()&quot;&gt;Add&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;
+						</code></pre>		
+					</div>	
+			    </section>			
+				<section>
+					<h2><i>Templating: JS code</i></h2>
+					<br />
+					<div class="fragment">
+						<pre><code>
+var myApp = angular.module('myApp',[]);
+myApp.controller('GreetingController', ['$scope', function($scope) {
+$scope.friends = [
+                    {
+                        id: 1, name: "Tricia", nickname: "Nickname1"
+                    },
+                    {
+                        id: 2, name: "Joanna", nickname: "Nickname2"
+                    },
+                    {
+                        id: 3, name: "Kit", nickname: "Sparky"
+                    }
+                ];
+    $scope.add = function() {
+        $scope.friends.push({id:4,name:'arash',nickname:'arashnickname'});
+    };
+}]);
+						</code></pre>		
+					</div>	
+			    </section>		
+				<section>
+					<h2><i>Custom Template: Can be used to create re-usable html templates</i></h2>
+					<div class="fragment">
+						<pre><code data-trim contenteditable>
+&lt;html ng-app=&quot;docsSimpleDirective&quot;&gt;
+        &lt;head&gt;
+            &lt;script type=&quot;text/javascript&quot; src=&quot;http://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js&quot;&gt;&lt;/script&gt;
+            &lt;script type=&quot;text/javascript&quot; src=&quot;controller.js&quot;&gt;&lt;/script&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;div ng-controller=&quot;Ctrl&quot;&gt;
+            &lt;div my-customer&gt;&lt;/div&gt;
+            &lt;div my-customer&gt;&lt;/div&gt;
+            &lt;div my-customer&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;							  
+
+						</code></pre>		
+					</div>
+				</section>
+				<section>
+					<h2><i>Custom Template</i></h2>
+					<div class="fragment">
+						<pre><code data-trim contenteditable>
+							  angular.module('docsSimpleDirective', [])
+                                   .controller('Ctrl', function($scope) {
+                                          $scope.customer = {
+                                               name: 'Naomi',
+                                               address: '1600 Amphitheatre'
+                                           };
+                                        })
+                                          .directive('myCustomer', function() {
+                                               return {
+                                                  template: 'Name: {{customer.name}} Address: {{customer.address}}'
+                                               };
+                                         });
+
+						</code></pre>		
+					</div>
+				</section>	
+				<section>
+					<h2><i>Dependency Injection:</i></h2>
+					<p>Dependency Injection is the design patter where the objects do not instantiate their dependencies, Instead the framework
+   passes their dependencies to them.</p>
+					<br />
+					<div class="fragment">
+						<pre><code data-trim contenteditable>
+&lt;html ng-app=&quot;myModule&quot;&gt;
+    &lt;head&gt;
+        &lt;script type=&quot;text/javascript&quot; src=&quot;http://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script type=&quot;text/javascript&quot; src=&quot;DI.js&quot;&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;div ng-controller=&quot;MyController&quot;&gt;
+        &lt;button ng-click=&quot;sayHello()&quot;&gt;Hello&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;							  
+						</code></pre>		
+					</div>
+				</section>	
+				<section>
+					<h2><i>Dependency Injection:</i></h2>
+					<p>Using Angular OOTB injector implicitly. Angular default injector subsystem takes care of dependency injection when controller is created</p>
+					<br />
+					<div class="fragment">
+						<pre><code data-trim contenteditable>
+							angular.module('myModule', [])
+							         .factory('greeter', function($window) {
+                                          return {
+                                              greet: function(text) {
+                                                  $window.alert(text);
+                                               }
+                                         };
+                                     })
+							           .controller('MyController', function($scope, greeter) {
+                                               $scope.sayHello = function() {
+                                               greeter.greet('Hello World');
+                                         };
+                                     });  
+						</code></pre>		
+					</div>
+				</section>
+				<section>
+					<h2><i>Dependency Injection:</i></h2>
+					<p>Dynamically inject a service to controller</p>
+					<br />
+					<div class="fragment">
+						<pre><code data-trim contenteditable>
+							angular.module('myModule', []).factory('greeter', function($window) {
+                                    return {
+                                       greet: function(text) {
+                                            $window.alert(text);
+                                     }
+                                 };
+                            })
+							  .controller('MyController', function($scope, $injector) {
+                                     $scope.sayHello = function() {
+                                             $injector.get('greeter').greet('hello worldcc'); 
+                                     };
+                            });
+   
+						</code></pre>		
+					</div>
+				</section>	
+				<section>
+					<h2><i>Useful tutorial links</i></h2>
+					<br />
+					<ul>
+								<li>http://angularjs.org/ </li>
+								<li>https://github.com/jmcunningham/AngularJS-Learning </li>
+								
+					   </ul>
+
+						<br>
 			    </section>
+                
+                
+                
+                
+                
+                
+                
+
 
                 
 			    <section>
